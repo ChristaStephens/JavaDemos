@@ -6,14 +6,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quiz</title>
+    <title>Java Demos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
    
 </head>
 <body>
-   <p>hi</p>
-    
+<h1>Reverse A String</h1>
+
+<c:forEach var="reverse" items="${ reverse }">
+<p> ${reverse } </p>
+</c:forEach>
 
 </body>
 </html>
