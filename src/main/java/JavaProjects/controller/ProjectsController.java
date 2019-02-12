@@ -1,5 +1,7 @@
 package JavaProjects.controller;
 
+import java.util.Scanner;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,4 +18,17 @@ public class ProjectsController {
 		return new ModelAndView("index");
 
 	}
+	
+	public static  String reverse() {
+		System.out.println("Hey friend, please input a string: ");
+		Scanner scnr = new Scanner(System.in);
+		String str = scnr.nextLine();
+		String reverse ="";
+		for (int i =str.length()-1;i >=0;i--) {
+			reverse = reverse +str.charAt(i);
+		}
+		
+		return "\"Your reversed string is: \"" + reverse;
+	}
+	
 }
