@@ -19,6 +19,16 @@ public class ProjectsController {
 
 	}
 	
+	
+	@RequestMapping("/replace")
+	public ModelAndView replaced() {
+		// will handle the home/index html page
+
+		//overloaded 1st is jsp, 2nd is expressions and 3rd is value of expression
+		return new ModelAndView("replace", "replace", replace());
+
+	}
+	
 	public static  String reverse() {
 		System.out.println("Hey friend, please input a string: ");
 		Scanner scnr = new Scanner(System.in);
@@ -27,8 +37,50 @@ public class ProjectsController {
 		for (int i =str.length()-1;i >=0;i--) {
 			reverse = reverse +str.charAt(i);
 		}
-		
+		scnr.close();
 		return "\"Your reversed string is: \"" + reverse;
 	}
 	
+	
+	
+	 public static String replace()
+	    {
+	        Scanner scnr = new Scanner(System.in);
+	         
+	        System.out.println("Enter the string...");
+	         
+	        String inputString = scnr.nextLine();
+	         
+	        String newInputString = inputString.replaceAll("[AEIOUaeiou]", "");
+	         
+	        System.out.println("The string without vowels...");
+	         
+//	        System.out.println(newInputString);
+	         
+	        scnr.close();
+			return newInputString;
+	    }
+	 
+	 public static int fizzbuzz() {
+			// Doing fizz buzz. for multiples of 3 write fizz
+			// for multiples of 5 write buzz. for multiples of 3
+			// and 5 write fizzbuzz
+
+			for (int i = 1; i < 100; i++) {
+
+				if (i % 15 == 0) {
+					System.out.println("fizzbuzz");
+				}
+				else if (i % 5 ==0) {
+					System.out.println("buzz");
+				}
+				else if(i % 3 ==0) {System.out.println("fizz");
+				}
+				else {System.out.println(i);
+				}
+				
+			}
+			return 0;
+
+		}
 }
