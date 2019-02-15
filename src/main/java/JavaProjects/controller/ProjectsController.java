@@ -83,4 +83,23 @@ public class ProjectsController {
 			return 0;
 
 		}
+	 
+	 public static String palindrome() {
+		    String r = ""; //To store the reverse
+		    Scanner sc = new Scanner(System.in);
+		    System.out.println("Enter the String");
+		    String s = sc.next(); // Entering the string
+
+		    for(int i= s.length() - 1;i>=0;i--) {
+		        r = r + s.charAt(i);
+		    }
+
+		    if(r.equals(s)) {
+		        System.out.println("Is a palindrome");
+		    }
+		    else {
+		        System.out.println("Not a palindrome");
+		    }
+			return null //(maybe void, or -s, or r);
+	}
 }
