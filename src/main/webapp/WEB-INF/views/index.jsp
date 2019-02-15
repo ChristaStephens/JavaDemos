@@ -14,7 +14,7 @@
 <body>
 <h1>Reverse A String</h1>
 
-this index page is like the first form page
+this index page is like the first form page of mad lib
 
 this page will have the user input the word to be reversed. need to take
 the information from the controller that is being reveresed, just the first part and place it here.
