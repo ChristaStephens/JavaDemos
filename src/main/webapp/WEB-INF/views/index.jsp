@@ -16,7 +16,8 @@
 
 <c:forEach var="reverse" items="${ reverse }">
 <p> ${reverse } </p>
-</c:forEach>
+</c:forEach> 
+
 
 </body>
 </html>
