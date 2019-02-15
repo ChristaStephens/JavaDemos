@@ -14,9 +14,9 @@
 <body>
 <h1>Reverse A String</h1>
 
-<c:forEach var="reverse" items="${ reverse }">
+
 <p> ${reverse } </p>
-</c:forEach> 
+
 
 
 </body>
