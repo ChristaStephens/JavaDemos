@@ -14,6 +14,14 @@
 <body>
 <h1>Reverse A String</h1>
 
+this index page is like the first form page
+
+this page will have the user input the word to be reversed. need to take
+the information from the controller that is being reveresed, just the first part and place it here.
+
+form action = results
+which will take users to result page
+
 
 <p> ${reverse } </p>
 <p>hey </p>
