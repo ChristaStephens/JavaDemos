@@ -1,5 +1,6 @@
 package JavaProjects.controller;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import org.springframework.stereotype.Controller;
@@ -103,4 +104,25 @@ public class ProjectsController {
 		    scnr.close();
 			return null; //(maybe void, or -s, or r);
 	}
+	 
+	 public static void main(String[] args) {      
+		 int my_array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		 int sum = 0;
+
+		 for (int i : my_array)
+		     sum += i;
+		 System.out.println("The sum is " + sum);
+		 }
+	 
+	 public static String hello() {
+		    ArrayList<String> strings = new ArrayList<String>();
+		    strings.add("Hello, World!");
+		    strings.add("Welcome to CoderPad.");
+		    strings.add("This pad is running Java " + Runtime.version().feature());
+
+		    for (String string : strings) {
+		      System.out.println(string);
+		    }
+			return null;
+		  }
 }
