@@ -42,6 +42,17 @@ public class ProjectsController {
 		return "\"Your reversed string is: \"" + reverse;
 	}
 	
+//	try this way
+//	public String reverse(String s) {
+//
+//        String reversedString = "";
+//        for(int i=s.length(); i>0; i--) {
+//            reversedString += s.charAt(i-1);
+//        }   
+//
+//        return reversedString;
+//    }
+	
 	
 	
 	 public static String replace()
