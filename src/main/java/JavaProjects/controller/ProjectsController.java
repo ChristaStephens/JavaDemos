@@ -16,7 +16,8 @@ public class ProjectsController {
 		// will handle the home/index html page
 
 		//overloaded 1st is jsp, 2nd is expressions and 3rd is value of expression
-		return new ModelAndView("index", "reverse", reverse());
+		//I am manually putting in the string to be reversed in the method below.
+		return new ModelAndView("index", "reverse", reverse("Input a string"));
 
 	}
 	
@@ -30,16 +31,16 @@ public class ProjectsController {
 
 	}
 	
-	public static  String reverse() {
-		System.out.println("Hey friend, please input a string: ");
-		Scanner scnr = new Scanner(System.in);
-		String str = scnr.nextLine();
+	public static  String reverse(String str) {
+//		System.out.println("Hey friend, please input a string: ");
+//		Scanner scnr = new Scanner(System.in);
+//		String str = scnr.nextLine();
 		String reverse ="";
 		for (int i =str.length()-1;i >=0;i--) {
 			reverse = reverse +str.charAt(i);
 		}
-		scnr.close();
-		return "\"Your reversed string is: \"" + reverse;
+//		scnr.close();
+		return  reverse;
 	}
 	
 //	try this way, with using only parameters and no user input.
