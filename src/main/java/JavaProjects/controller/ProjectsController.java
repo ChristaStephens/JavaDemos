@@ -42,7 +42,7 @@ public class ProjectsController {
 		return "\"Your reversed string is: \"" + reverse;
 	}
 	
-//	try this way
+//	try this way, with using only parameters and no user input.
 //	public String reverse(String s) {
 //
 //        String reversedString = "";
